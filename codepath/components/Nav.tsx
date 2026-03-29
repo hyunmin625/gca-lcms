@@ -15,6 +15,7 @@ export default function Nav({ links = [] }: NavProps) {
   const router = useRouter()
   const [user, setUser] = useState<{ id: string; email?: string } | null>(null)
   const [displayName, setDisplayName] = useState<string>('')
+  const [role, setRole] = useState<string>('student')
   const [menuOpen, setMenuOpen] = useState(false)
   const menuRef = useRef<HTMLDivElement>(null)
 
@@ -25,11 +26,11 @@ export default function Nav({ links = [] }: NavProps) {
       if (data.user) {
         supabase
           .from('profiles')
-          .select('display_name')
+          .select('display_name, role')
           .eq('id', data.user.id)
           .single()
           .then(({ data: profile }) => {
-            if (profile) setDisplayName(profile.display_name ?? '')
+            if (profile) { setDisplayName(profile.display_name ?? ''); setRole(profile.role ?? 'student') }
           })
       }
     })
@@ -40,14 +41,15 @@ export default function Nav({ links = [] }: NavProps) {
       if (session?.user) {
         supabase
           .from('profiles')
-          .select('display_name')
+          .select('display_name, role')
           .eq('id', session.user.id)
           .single()
           .then(({ data: profile }) => {
-            if (profile) setDisplayName(profile.display_name ?? '')
+            if (profile) { setDisplayName(profile.display_name ?? ''); setRole(profile.role ?? 'student') }
           })
       } else {
         setDisplayName('')
+        setRole('student')
       }
     })
 
@@ -96,6 +98,12 @@ export default function Nav({ links = [] }: NavProps) {
                 <div className={styles.dropdownDivider} />
                 <Link href="/dashboard" className={styles.dropdownItem} onClick={() => setMenuOpen(false)}>마이페이지</Link>
                 <Link href="/courses" className={styles.dropdownItem} onClick={() => setMenuOpen(false)}>코스 목록</Link>
+                {role === 'admin' && (
+                  <>
+                    <div className={styles.dropdownDivider} />
+                    <Link href="/admin" className={styles.dropdownItem} onClick={() => setMenuOpen(false)}>관리자</Link>
+                  </>
+                )}
                 <div className={styles.dropdownDivider} />
                 <button className={styles.dropdownItem} onClick={handleLogout}>로그아웃</button>
               </div>
