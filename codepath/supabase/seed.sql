@@ -1,4 +1,4 @@
--- CodePath 시드 데이터: 기존 하드코딩 커리큘럼을 DB로 이관
+-- CodeNova 시드 데이터: 기존 하드코딩 커리큘럼을 DB로 이관
 
 -- 코스: Python 마스터 코스
 INSERT INTO courses (id, title, slug, description, level, is_free, status, sort_order)
@@ -109,4 +109,4 @@ INSERT INTO lessons (id, section_id, title, slug, description, video_id, duratio
 ON CONFLICT DO NOTHING;
 
 -- 테스트 유저를 admin으로 설정
-UPDATE profiles SET role = 'admin' WHERE email = 'test@codepath.kr';
+UPDATE profiles SET role = 'admin' WHERE email = 'test@codenova.kr';

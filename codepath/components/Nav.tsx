@@ -78,7 +78,7 @@ export default function Nav({ links = [] }: NavProps) {
 
   return (
     <nav className={styles.nav}>
-      <Link href="/" className={styles.logo}>CodePath<span>_</span></Link>
+      <Link href="/" className={styles.logo}>CodeNova<span>_</span></Link>
       <div className={styles.right}>
         {links.map(link => (
           <Link key={link.href} href={link.href} className={styles.link}>{link.label}</Link>

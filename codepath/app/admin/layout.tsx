@@ -37,7 +37,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   return (
     <div className={styles.layout}>
       <aside className={styles.sidebar}>
-        <Link href="/" className={styles.logo}>CodePath<span>_</span></Link>
+        <Link href="/" className={styles.logo}>CodeNova<span>_</span></Link>
         <span className={styles.badge}>ADMIN</span>
         <nav className={styles.menu}>
           {menuItems.map(item => (

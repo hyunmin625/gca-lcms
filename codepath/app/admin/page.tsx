@@ -29,7 +29,7 @@ export default function AdminDashboard() {
     <div>
       <div className={styles.pageHeader}>
         <h1 className={styles.pageTitle}>관리자 대시보드</h1>
-        <p className={styles.pageDesc}>CodePath LCMS 운영 현황</p>
+        <p className={styles.pageDesc}>CodeNova LCMS 운영 현황</p>
       </div>
       <div className={styles.statsGrid}>
         <div className={styles.statCard}>

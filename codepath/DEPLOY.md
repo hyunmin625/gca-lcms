@@ -13,7 +13,7 @@
 ## 2. 로컬 개발
 
 ```bash
-cd codepath
+cd codenova
 
 # .env.local 수정
 cp .env.local.example .env.local
@@ -33,8 +33,8 @@ npm run dev
 # GitHub에 push
 git init
 git add .
-git commit -m "Initial commit: CodePath Next.js"
-git remote add origin https://github.com/your-username/codepath.git
+git commit -m "Initial commit: CodeNova Next.js"
+git remote add origin https://github.com/your-username/codenova.git
 git push -u origin main
 ```
 
@@ -74,7 +74,7 @@ npm run start    # 프로덕션 서버 실행
 ## 파일 구조 요약
 
 ```
-codepath/
+codenova/
 ├── app/
 │   ├── page.tsx              ← 랜딩 페이지 (/)
 │   ├── classroom/page.tsx    ← 강의실 (/classroom)

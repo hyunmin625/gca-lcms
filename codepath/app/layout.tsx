@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "CodePath — 코드로 여는 미래",
+  title: "CodeNova — 코드로 여는 미래",
   description: "Python 기초부터 알고리즘까지. 체계적인 커리큘럼으로 개발자 여정을 시작하세요.",
 };
 

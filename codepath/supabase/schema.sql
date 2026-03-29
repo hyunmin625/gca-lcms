@@ -1,4 +1,4 @@
--- CodePath DB Schema
+-- CodeNova DB Schema
 -- Supabase SQL Editor에서 실행하세요
 
 -- 1. 프로필 테이블 (회원 정보)

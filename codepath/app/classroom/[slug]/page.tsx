@@ -130,7 +130,7 @@ export default function ClassroomPage() {
       <div className={styles.topbar}>
         <div className={styles.topLeft}>
           <button className={styles.sidebarToggle} onClick={() => setSidebarOpen(v => !v)}>☰</button>
-          <Link href="/" className={styles.logo}>CodePath<span>_</span></Link>
+          <Link href="/" className={styles.logo}>CodeNova<span>_</span></Link>
           <Link href={`/courses/${slug}`} className={styles.backLink}>← 코스 소개</Link>
         </div>
         <div className={styles.topRight}>

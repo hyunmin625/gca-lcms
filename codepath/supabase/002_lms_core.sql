@@ -1,4 +1,4 @@
--- CodePath LMS Core Schema (2단계)
+-- CodeNova LMS Core Schema (2단계)
 -- courses, sections, lessons, enrollments + profiles에 role 추가
 
 -- 1. profiles에 역할 컬럼 추가

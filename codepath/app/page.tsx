@@ -56,7 +56,7 @@ export default function LandingPage() {
               <span className={styles.dot} style={{background:'#ff5f57'}} />
               <span className={styles.dot} style={{background:'#febc2e'}} />
               <span className={styles.dot} style={{background:'#28c840'}} />
-              <span className={styles.terminalTitle}>python3 — codepath</span>
+              <span className={styles.terminalTitle}>python3 — codenova</span>
             </div>
             <div className={styles.terminalBody}>
               <div className={styles.termComment}># 첫 번째 프로그램</div>
@@ -88,8 +88,8 @@ export default function LandingPage() {
       {/* FEATURES */}
       <section className={styles.section} id="features">
         <div className={styles.sectionLabel}>// FEATURES</div>
-        <h2 className={styles.sectionTitle}>왜 CodePath인가?</h2>
-        <p className={styles.sectionDesc}>수많은 강의 사이에서 CodePath가 다른 점은 실전 중심의 설계에 있습니다.</p>
+        <h2 className={styles.sectionTitle}>왜 CodeNova인가?</h2>
+        <p className={styles.sectionDesc}>수많은 강의 사이에서 CodeNova가 다른 점은 실전 중심의 설계에 있습니다.</p>
         <div className={styles.featuresGrid}>
           {features.map(f => (
             <div key={f.title} className={styles.featureCard}>
@@ -129,13 +129,13 @@ export default function LandingPage() {
           <h2>지금 바로<br />코딩을 시작하세요</h2>
           <p>48개 이상의 무료 강의가 당신을 기다리고 있습니다.</p>
           <Link href="/auth/signup" className={`${styles.btn} ${styles.btnPrimary}`}>무료 회원가입 →</Link>
-          <div className={styles.ctaCode}><span>$</span> python3 -c &quot;import codepath; codepath.<span>start</span>()&quot;</div>
+          <div className={styles.ctaCode}><span>$</span> python3 -c &quot;import codenova; codenova.<span>start</span>()&quot;</div>
         </div>
       </section>
 
       {/* FOOTER */}
       <footer className={styles.footer}>
-        <p>© 2026 CodePath — Built for learners, by developers.</p>
+        <p>© 2026 CodeNova — Built for learners, by developers.</p>
       </footer>
     </div>
   )

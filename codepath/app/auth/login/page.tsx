@@ -33,7 +33,7 @@ export default function LoginPage() {
   return (
     <div className={styles.page}>
       <div className={styles.card}>
-        <Link href="/" className={styles.logo}>CodePath<span>_</span></Link>
+        <Link href="/" className={styles.logo}>CodeNova<span>_</span></Link>
         <h1 className={styles.title}>로그인</h1>
         <p className={styles.sub}>수강 진행률이 자동으로 저장됩니다</p>
 

@@ -1,4 +1,4 @@
-# CodePath — LCMS 프로젝트 계획
+# CodeNova — LCMS 프로젝트 계획
 
 ## 프로젝트 개요
 코딩 온라인교육을 위한 **LCMS(Learning Content Management System)**.
@@ -190,7 +190,7 @@ Python 등 프로그래밍 언어 강의를 체계적으로 **제작·관리(CMS
 gca_lcms/
 ├── PROJECT_PLAN.md
 ├── CLAUDE.md
-└── codepath/                       ← Next.js 프로젝트 (메인)
+└── codenova/                       ← Next.js 프로젝트 (메인)
     ├── package.json
     ├── next.config.ts
     ├── .env.local.example

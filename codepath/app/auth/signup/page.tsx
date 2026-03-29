@@ -38,7 +38,7 @@ export default function SignupPage() {
   if (done) return (
     <div className={styles.page}>
       <div className={styles.card}>
-        <Link href="/" className={styles.logo}>CodePath<span>_</span></Link>
+        <Link href="/" className={styles.logo}>CodeNova<span>_</span></Link>
         <div className={styles.doneIcon}>✓</div>
         <h1 className={styles.title}>이메일을 확인해 주세요</h1>
         <p className={styles.sub}>{email}으로 인증 링크를 보냈습니다.<br />이메일을 확인하고 링크를 클릭하면 시작할 수 있습니다.</p>
@@ -52,7 +52,7 @@ export default function SignupPage() {
   return (
     <div className={styles.page}>
       <div className={styles.card}>
-        <Link href="/" className={styles.logo}>CodePath<span>_</span></Link>
+        <Link href="/" className={styles.logo}>CodeNova<span>_</span></Link>
         <h1 className={styles.title}>무료 회원가입</h1>
         <p className={styles.sub}>48개 강의를 무료로 시작하세요</p>
 
