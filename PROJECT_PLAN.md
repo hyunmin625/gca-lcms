@@ -190,7 +190,7 @@ Python 등 프로그래밍 언어 강의를 체계적으로 **제작·관리(CMS
 gca_lcms/
 ├── PROJECT_PLAN.md
 ├── CLAUDE.md
-└── codewave/                       ← Next.js 프로젝트 (메인)
+└── codenova/                       ← Next.js 프로젝트 (메인)
     ├── package.json
     ├── next.config.ts
     ├── .env.local.example
